@@ -1,0 +1,10 @@
+---------- Buổi 1. Javascript có thể làm được gì? Giới thiệu về trang F8 | Học lập trình Javascript cơ bản ----------
+
+---------- Buổi 2. Lời khuyên trước khóa học | Lộ trình khóa học JavaScript cơ bản tại F8 ----------
+
+---------- Buổi 3. Cài đặt môi trường, công cụ phù hợp để học JavaScript ----------
+1. Cài đặt công cụ 
+ - Trình duyệt chrome 
+ - Visual studio code + Live server
+
+---------- Buổi 4. Cách sử dụng JS trong file HTML | Visual Studio Code ----------
