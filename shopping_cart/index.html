@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Shopping Cart Use LocaStorage</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body onload="loadCart()">
+    <div class="container mt-5">
+        <div class="cart text-right">
+            <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+            <span id="cart-total">0</span>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <div class="box">
+                    <img src="https://mixuediemdien.com/wp-content/uploads/2023/08/Super-Sundae-mam-xoi-300x300.jpg"
+                        alt="" style="width: 100%;">
+                    <h5 class="mt-2 product-name">Trà sữa 1</h5>
+                    <p class="font-weight-bold text-danger"><span class="product-price">10.000</span> <sup>đ</sup></p>
+                    <button class="text-center add-to-cart">Thêm giỏ hàng</button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="box">
+                    <img src="https://mixuediemdien.com/wp-content/uploads/2023/07/Sua-Kem-Lac-Dao-300x300.jpg" alt=""
+                        style="width: 100%;">
+                    <h5 class="mt-2 product-name">Trà sữa 2</h5>
+                    <p class="font-weight-bold text-danger"><span class="product-price">20.000</span> <sup>đ</sup></p>
+                    <button class="text-center add-to-cart">Thêm giỏ hàng</button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="box">
+                    <img src="https://mixuediemdien.com/wp-content/uploads/2023/07/Super-Sundae-Lo-Hoi-280x280.jpg"
+                        alt="" style="width: 100%;">
+                    <h5 class="mt-2 product-name">Trà sữa 3</h5>
+                    <p class="font-weight-bold text-danger"><span class="product-price">30.000</span> <sup>đ</sup></p>
+                    <button class="text-center add-to-cart">Thêm giỏ hàng</button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="box">
+                    <img src="https://mixuediemdien.com/wp-content/uploads/2023/07/Kem-Cam-Loc-Xoay-280x280.jpeg" alt=""
+                        style="width: 100%;">
+                    <h5 class="mt-2 product-name">Trà sữa 4</h5>
+                    <p class="font-weight-bold text-danger"><span class="product-price">40.000</span> <sup>đ</sup></p>
+                    <button class="text-center add-to-cart">Thêm giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <!-- Cart table -->
+        <table class="table table-hover mt-5">
+            <thead>
+                <tr>
+                    <th>Hình ảnh</th>
+                    <th>Tên</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody class="cart-table">
+                <!-- <tr>
+                    <td scope="row"><img src="" alt="" height="100px"></td>
+                    <td>Trà sữa 1</td>
+                    <td>20.000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>
+                        <button>Xóa</button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+        <!-- Cart total -->
+        <div class="text-right">
+            <h5 class="text-danger">Tổng tiền: <span class="total">0</span> <sup>đ</sup></h5>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
