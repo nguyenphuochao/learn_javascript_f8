@@ -66,6 +66,13 @@
          * 1. render songs
          * 2. scroll top
          * 3. play/pause/seek
+         * 4. CD rotate
+         * 5. Next/Prev
+         * 6. Random
+         * 7. Next/ Reapeat when ended
+         * 8. Active songs
+         * 9. Scroll active song into view
+         * 10. Play song when click
         */
 
         const $ = document.querySelector.bind(document);
@@ -75,27 +82,33 @@
             songs: [
                 {
                     name: "Bài hát 1",
-                    single: "Ca sĩ 1",
+                    singer: "Ca sĩ 1",
                     path: "./assets/music/song1.mp3",
-                    img: "./assets/img/song1.png"
+                    image: "./assets/img/song1.png"
                 },
                 {
                     name: "Bài hát 2",
-                    single: "Ca sĩ 2",
+                    singer: "Ca sĩ 2",
                     path: "./assets/music/song2.mp3",
-                    img: "./assets/img/song2.png"
+                    image: "./assets/img/song2.png"
                 },
                 {
                     name: "Bài hát 3",
-                    single: "Ca sĩ 3",
+                    singer: "Ca sĩ 3",
                     path: "./assets/music/song3.mp3",
-                    img: "./assets/img/song3.png"
+                    image: "./assets/img/song3.png"
                 },
                 {
                     name: "Bài hát 4",
-                    single: "Ca sĩ 4",
+                    singer: "Ca sĩ 4",
                     path: "./assets/music/song4.mp3",
-                    img: "./assets/img/song4.png"
+                    image: "./assets/img/song4.png"
+                },
+                {
+                    name: "Bài hát 5",
+                    singer: "Ca sĩ 5",
+                    path: "./assets/music/song5.mp3",
+                    image: "./assets/img/song5.png"
                 }
             ],
 
@@ -104,11 +117,11 @@
                     return `
                         <div class="song">
                                 <div class="thumb"
-                                    style="background-image: url('${song.img}')">
+                                    style="background-image: url('${song.image}')">
                                 </div>
                                 <div class="body">
                                     <h3 class="title">${song.name}</h3>
-                                    <p class="author">${song.single}</p>
+                                    <p class="author">${song.singer}</p>
                                 </div>
                                 <div class="option">
                                     <i class="fas fa-ellipsis-h"></i>
@@ -118,8 +131,10 @@
                 });
 
                 $(".playlist").innerHTML = htmls.join('');
+
             },
 
+            // xử lý sự kiện
             handleEvents: function () {
                 const cd = $(".cd");
                 const cdWidth = cd.offsetWidth;
@@ -139,8 +154,8 @@
             }
         }
 
-        app.start();
-        
+        app.start(); // chạy app
+
     </script>
 </body>
 
