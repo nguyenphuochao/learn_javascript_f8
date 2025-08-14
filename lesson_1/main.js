@@ -1,13 +1,11 @@
-const person1 = {
-    name: 'Son',
-    age: 21
-}
+setTimeout(function () { 
+    console.log(1);
+    setTimeout(function() {
+        console.log(2);
+        setTimeout(() => {
+            console.log(3);
+        }, 1000);
+    }, 1000)
+ }, 1000)
 
-const person2 = {
-    ...person1
-}
-
-// Expected results
-console.log(person2.name) // Output: 'Son'
-console.log(person2.age) // Output: 21
-console.log(person1 === person2) // Output: false
+ console.log('Đi ngủ');
