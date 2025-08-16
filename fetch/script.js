@@ -17,3 +17,6 @@ fetch(postUrl)
         var html = htmls.join('');
         document.querySelector("#post-block").innerHTML = html;
     })
+    .catch(function (error) {
+        console.log("Error:", error);
+    });
